@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        @Html.TextArea("EventLog", null, new { @class = "form-control", @style = "width: 100%; height:150px;" })
+    </div>
+</div>
+<div class="form-group row">
+    <form class="navbar-form navbar-left" id="connectionString">
+        <div class="col-sm-3">
+            <input name="Username" type="text" class="form-control" placeholder="Username">
+        </div>
+        <div class="col-sm-3">
+            <input name="Password" type="password" class="form-control" placeholder="Password">
+        </div> 
+        <div class="col-sm-2">
+            <input name="Host" type="text" class="form-control" placeholder="Host">
+        </div>
+        <div class="col-sm-2">
+            <input name="Port" type="number" class="form-control" placeholder="Port">
+        </div>
+        <div class="col-sm-2">
+            <button type="submit" class="btn btn-default" style="width:106px;">Connect</button>
+        </div>
+    </form>
+</div>
+<div class="row" >
+    <div class="col-sm-5">
+        <div id="jstree1">
+        </div>
+    </div>
+    <div class="col-sm-2" ">
+        <div style="text-align:center">
+            <button type="button" class="btn btn-default" id="transferLocalToRemote" aria-label="Left Align">
+                <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+            </button>
+        </div>
+        <div style="text-align:center">
+            <button type="button" class="btn btn-default" id="transferRemoteToLocal" aria-label="Left Align">
+                <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+            </button>
+        </div>        
+    </div>
+    <div class="col-sm-5">
+        <div id="jstree2"></div>
+    </div>
+</div>
+
+
+<!-- <button>demo button</button> -->
+
+
+
+
+
+
+
+
+
+
